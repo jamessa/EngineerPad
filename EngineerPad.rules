@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 1315)
+    (start_pass_no 1547)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -63,13 +63,12 @@
     )
   )
   (class "kicad_default"
-    Boot GND +5V "Net-(D1-Pad2)" /DP /DN "Net-(D4-Pad2)" Row0
-    "Net-(D5-Pad2)" Row1 "Net-(D6-Pad2)" "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" "Net-(D11-Pad2)"
-    "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad2)" Row2 "Net-(D15-Pad2)" Row3 "Net-(D16-Pad2)" Row4
-    "Net-(D17-Pad2)" "Net-(D18-Pad2)" "Net-(D19-Pad2)" "Net-(D20-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)" "Net-(D23-Pad2)" "Net-(D26-Pad2)"
-    /VSUB SDO SCK SDI Reset /CC1 /CC2 D+
-    "D-" Col0 Col1 Col2 Col3 Col4 "Net-(C1-Pad2)" "Net-(C2-Pad2)"
-    "Net-(D2-Pad2)" "Net-(D3-Pad2)"
+    GND +5V "Net-(D1-Pad2)" "Net-(D4-Pad2)" Row0 "Net-(D5-Pad2)" Row1 "Net-(D6-Pad2)"
+    "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(D9-Pad2)" "Net-(D10-Pad2)" "Net-(D11-Pad2)" "Net-(D12-Pad2)" "Net-(D13-Pad2)" "Net-(D14-Pad2)"
+    Row2 "Net-(D15-Pad2)" Row3 "Net-(D16-Pad2)" Row4 "Net-(D17-Pad2)" "Net-(D18-Pad2)" "Net-(D19-Pad2)"
+    "Net-(D20-Pad2)" "Net-(D21-Pad2)" "Net-(D22-Pad2)" "Net-(D23-Pad2)" "Net-(D26-Pad2)" SDO SCK SDI
+    Reset D+ "D-" Col0 Col1 Col2 Col3 Col4
+    "Net-(C1-Pad2)" "Net-(C2-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D24-Pad1)" "Net-(D25-Pad1)" "Net-(F1-Pad2)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule

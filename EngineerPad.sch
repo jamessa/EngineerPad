@@ -227,34 +227,6 @@ Wire Wire Line
 	1850 7250 2350 7250
 Wire Wire Line
 	1350 7250 1850 7250
-Text GLabel 2450 4700 2    50   Input ~ 0
-Boot
-Text GLabel 3000 6250 0    50   Input ~ 0
-Boot
-$Comp
-L Switch:SW_Push Boot1
-U 1 1 5F15D94A
-P 3650 6250
-F 0 "Boot1" H 3650 6535 50  0000 C CNN
-F 1 "Boot" H 3650 6444 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3650 6450 50  0001 C CNN
-F 3 "~" H 3650 6450 50  0001 C CNN
-	1    3650 6250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR011
-U 1 1 5F15D96C
-P 3850 6250
-F 0 "#PWR011" H 3850 6000 50  0001 C CNN
-F 1 "GND" H 3855 6077 50  0000 C CNN
-F 2 "" H 3850 6250 50  0001 C CNN
-F 3 "" H 3850 6250 50  0001 C CNN
-	1    3850 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3000 6250 3450 6250
 $Comp
 L power:+5V #PWR04
 U 1 1 5F169608
@@ -401,103 +373,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 6350 5700 6400
 $Comp
-L power:GND #PWR06
-U 1 1 5F18C57D
-P 6250 5300
-F 0 "#PWR06" H 6250 5050 50  0001 C CNN
-F 1 "GND" H 6255 5127 50  0000 C CNN
-F 2 "" H 6250 5300 50  0001 C CNN
-F 3 "" H 6250 5300 50  0001 C CNN
-	1    6250 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR02
-U 1 1 5F193EA5
-P 5950 3300
-F 0 "#PWR02" H 5950 3150 50  0001 C CNN
-F 1 "+5V" H 5965 3473 50  0000 C CNN
-F 2 "" H 5950 3300 50  0001 C CNN
-F 3 "" H 5950 3300 50  0001 C CNN
-	1    5950 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Polyfuse F1
-U 1 1 5F1977F4
-P 5950 3550
-F 0 "F1" H 6038 3596 50  0000 L CNN
-F 1 "100mA" H 6038 3505 50  0000 L CNN
-F 2 "Fuse:Fuse_Bourns_MF-RG500" H 6000 3350 50  0001 L CNN
-F 3 "~" H 5950 3550 50  0001 C CNN
-	1    5950 3550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 3300 5950 3400
-Wire Wire Line
-	5650 4050 5950 4050
-$Comp
-L Device:R R3
-U 1 1 5F19DEC0
-P 5950 4550
-F 0 "R3" V 5743 4550 50  0000 C CNN
-F 1 "5.1K" V 5834 4550 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5880 4550 50  0001 C CNN
-F 3 "~" H 5950 4550 50  0001 C CNN
-	1    5950 4550
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5F1A1C8A
-P 6700 4150
-F 0 "R1" V 6493 4150 50  0000 C CNN
-F 1 "75" V 6584 4150 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6630 4150 50  0001 C CNN
-F 3 "~" H 6700 4150 50  0001 C CNN
-	1    6700 4150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D25
-U 1 1 5F1A8BD9
-P 6900 4700
-F 0 "D25" V 6854 4780 50  0000 L CNN
-F 1 "3.6V" V 6945 4780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6900 4700 50  0001 C CNN
-F 3 "~" H 6900 4700 50  0001 C CNN
-	1    6900 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Zener D24
-U 1 1 5F1A919A
-P 6550 4700
-F 0 "D24" V 6504 4780 50  0000 L CNN
-F 1 "3.6V" V 6595 4780 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6550 4700 50  0001 C CNN
-F 3 "~" H 6550 4700 50  0001 C CNN
-	1    6550 4700
-	0    1    1    0   
-$EndComp
-Text GLabel 7250 4150 2    50   Input ~ 0
-D+
-$Comp
-L Device:R R2
-U 1 1 5F1A2774
-P 7050 4350
-F 0 "R2" V 7257 4350 50  0000 C CNN
-F 1 "75" V 7166 4350 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6980 4350 50  0001 C CNN
-F 3 "~" H 7050 4350 50  0001 C CNN
-	1    7050 4350
-	0    -1   -1   0   
-$EndComp
-Text GLabel 7250 4350 2    50   Input ~ 0
-D-
-NoConn ~ 5650 4750
-$Comp
 L Device:D D1
 U 1 1 5F1D9EE7
 P 8750 1500
@@ -566,113 +441,6 @@ F 3 "~" H 3350 3550 50  0001 C CNN
 	1    3350 3550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5950 4050 5950 3950
-Wire Wire Line
-	5650 3950 5950 3950
-Connection ~ 5950 3950
-Wire Wire Line
-	5950 3950 5950 3700
-NoConn ~ 5650 4850
-Wire Wire Line
-	6250 5150 6250 5300
-Connection ~ 6250 5150
-Wire Wire Line
-	5650 5050 5750 5050
-Wire Wire Line
-	6250 4550 6250 4650
-$Comp
-L Device:R R4
-U 1 1 5F19F6F9
-P 5950 4650
-F 0 "R4" V 5743 4650 50  0000 C CNN
-F 1 "5.1K" V 5834 4650 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5880 4650 50  0001 C CNN
-F 3 "~" H 5950 4650 50  0001 C CNN
-	1    5950 4650
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5650 4650 5800 4650
-Wire Wire Line
-	6100 4650 6250 4650
-Connection ~ 6250 4650
-Wire Wire Line
-	5650 4550 5800 4550
-Wire Wire Line
-	6100 4550 6250 4550
-Wire Wire Line
-	5650 4150 5950 4150
-Wire Wire Line
-	5650 4250 5950 4250
-Wire Wire Line
-	5950 4250 5950 4150
-Wire Wire Line
-	5650 4350 5750 4350
-Wire Wire Line
-	5650 4450 5750 4450
-Wire Wire Line
-	5750 4450 5750 4350
-Connection ~ 5750 4350
-Wire Wire Line
-	5750 4350 6900 4350
-Wire Wire Line
-	6900 4350 6900 4550
-Connection ~ 6900 4350
-Wire Wire Line
-	5950 4150 6550 4150
-Connection ~ 5950 4150
-Wire Wire Line
-	6550 4150 6550 4550
-Connection ~ 6550 4150
-Wire Wire Line
-	6850 4150 7250 4150
-Wire Wire Line
-	7200 4350 7250 4350
-Wire Wire Line
-	6550 4850 6550 5150
-Wire Wire Line
-	6550 5150 6250 5150
-Wire Wire Line
-	6900 4850 6900 5150
-Wire Wire Line
-	6900 5150 6550 5150
-Connection ~ 6550 5150
-Wire Wire Line
-	5750 4950 5750 5050
-Wire Wire Line
-	6250 4650 6250 5050
-Wire Wire Line
-	5650 4950 5750 4950
-$Comp
-L JSA:USB-2.0-Type-C-Receptacle USB1
-U 1 1 5F11DCBC
-P 5550 4500
-F 0 "USB1" H 5322 4553 60  0000 R CNN
-F 1 "TYPE-C" H 5322 4447 60  0000 R TNN
-F 2 "JSA:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 5550 4500 60  0001 C CNN
-F 3 "" H 5550 4500 60  0001 C CNN
-	1    5550 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5650 5150 6250 5150
-Wire Wire Line
-	5750 5050 6250 5050
-Connection ~ 5750 5050
-Connection ~ 6250 5050
-Wire Wire Line
-	6250 5050 6250 5150
-Text Label 6150 4150 0    50   ~ 0
-DP
-Text Label 6150 4350 0    50   ~ 0
-DN
-Text Label 5950 3800 0    50   ~ 0
-VSUB
-Text Label 5650 4550 0    50   ~ 0
-CC1
-Text Label 5650 4650 0    50   ~ 0
-CC2
 $Comp
 L Switch:SW_Push SW3
 U 1 1 5F479141
@@ -1295,4 +1063,146 @@ Wire Wire Line
 	10350 3600 10350 4400
 Connection ~ 10350 3600
 NoConn ~ 2450 3900
+$Comp
+L Connector:USB_A J2
+U 1 1 5F46B763
+P 5350 1850
+F 0 "J2" H 5407 2317 50  0000 C CNN
+F 1 "USB_A" H 5407 2226 50  0000 C CNN
+F 2 "Connector_USB:USB_A_CONNFLY_DS1095-WNR0" H 5500 1800 50  0001 C CNN
+F 3 " ~" H 5500 1800 50  0001 C CNN
+	1    5350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Polyfuse F1
+U 1 1 5F4727C6
+P 6050 1500
+F 0 "F1" H 6138 1546 50  0000 L CNN
+F 1 "100mA" H 6138 1455 50  0000 L CNN
+F 2 "Fuse:Fuse_Bourns_MF-RHT050" H 6100 1300 50  0001 L CNN
+F 3 "~" H 6050 1500 50  0001 C CNN
+	1    6050 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5F4818C7
+P 6200 1850
+F 0 "R1" V 5993 1850 50  0000 C CNN
+F 1 "75" V 6084 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6130 1850 50  0001 C CNN
+F 3 "~" H 6200 1850 50  0001 C CNN
+	1    6200 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F48290F
+P 6450 1950
+F 0 "R2" V 6243 1950 50  0000 C CNN
+F 1 "75" V 6334 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 1950 50  0001 C CNN
+F 3 "~" H 6450 1950 50  0001 C CNN
+	1    6450 1950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5650 1850 5950 1850
+Wire Wire Line
+	5650 1950 6250 1950
+Wire Wire Line
+	6350 1850 6900 1850
+Text GLabel 6900 1850 2    50   Input ~ 0
+D+
+Text GLabel 7100 1950 2    50   Input ~ 0
+D-
+Wire Wire Line
+	6600 1950 7100 1950
+$Comp
+L Device:D_Zener D25
+U 1 1 5F49960F
+P 6250 2100
+F 0 "D25" V 6204 2180 50  0000 L CNN
+F 1 "3.6V" V 6295 2180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 2100 50  0001 C CNN
+F 3 "~" H 6250 2100 50  0001 C CNN
+	1    6250 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Zener D24
+U 1 1 5F499615
+P 5950 2000
+F 0 "D24" V 5904 2080 50  0000 L CNN
+F 1 "3.6V" V 5995 2080 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5950 2000 50  0001 C CNN
+F 3 "~" H 5950 2000 50  0001 C CNN
+	1    5950 2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2150 5950 2250
+Connection ~ 5950 1850
+Wire Wire Line
+	5950 1850 6050 1850
+Connection ~ 6250 1950
+Wire Wire Line
+	6250 1950 6300 1950
+Wire Wire Line
+	5250 2250 5350 2250
+Wire Wire Line
+	5350 2250 5700 2250
+Connection ~ 5350 2250
+Connection ~ 5950 2250
+Wire Wire Line
+	5950 2250 6250 2250
+Wire Wire Line
+	5700 2250 5700 2400
+Connection ~ 5700 2250
+Wire Wire Line
+	5700 2250 5950 2250
+$Comp
+L power:GND #PWR0102
+U 1 1 5F4B210A
+P 5700 2400
+F 0 "#PWR0102" H 5700 2150 50  0001 C CNN
+F 1 "GND" H 5705 2227 50  0000 C CNN
+F 2 "" H 5700 2400 50  0001 C CNN
+F 3 "" H 5700 2400 50  0001 C CNN
+	1    5700 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0101
+U 1 1 5F577E54
+P 6050 1250
+F 0 "#PWR0101" H 6050 1100 50  0001 C CNN
+F 1 "+5V" H 6065 1423 50  0000 C CNN
+F 2 "" H 6050 1250 50  0001 C CNN
+F 3 "" H 6050 1250 50  0001 C CNN
+	1    6050 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 1250 6050 1350
+NoConn ~ 2450 4700
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F58058D
+P 5800 1250
+F 0 "#FLG0101" H 5800 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5800 1423 50  0000 C CNN
+F 2 "" H 5800 1250 50  0001 C CNN
+F 3 "~" H 5800 1250 50  0001 C CNN
+	1    5800 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1650 5800 1650
+Wire Wire Line
+	5800 1250 5800 1650
+Connection ~ 5800 1650
+Wire Wire Line
+	5800 1650 6050 1650
 $EndSCHEMATC
