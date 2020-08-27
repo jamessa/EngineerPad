@@ -307,17 +307,13 @@ F 3 "https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names" H 2725 465
 	1    0    0    -1  
 $EndComp
 Text GLabel 4400 5200 2    50   Input ~ 0
-SCK
+Row0
 Text GLabel 4400 5100 2    50   Input ~ 0
-SDI
-Text GLabel 4400 5000 2    50   Input ~ 0
-SDO
-Text GLabel 2450 3000 2    50   Input ~ 0
-SCK
-Text GLabel 2450 2900 2    50   Input ~ 0
-SDO
+Row2
+Text GLabel 2450 2700 2    50   Input ~ 0
+Row3
 Text GLabel 2450 2800 2    50   Input ~ 0
-SDI
+Row2
 $Comp
 L power:+5V #PWR09
 U 1 1 5F180EA9
@@ -412,21 +408,19 @@ Col1
 Text GLabel 8350 850  1    50   Input ~ 0
 Col0
 Connection ~ 8850 1350
-Text GLabel 2450 4200 2    50   Input ~ 0
+Text GLabel 2450 3000 2    50   Input ~ 0
 Row0
-Text GLabel 2450 4300 2    50   Input ~ 0
+Text GLabel 2450 2900 2    50   Input ~ 0
 Row1
-Text GLabel 2450 3400 2    50   Input ~ 0
+Text GLabel 2450 3800 2    50   Input ~ 0
 Col0
-Text GLabel 2450 3500 2    50   Input ~ 0
+Text GLabel 2450 3700 2    50   Input ~ 0
 Col1
 NoConn ~ 2450 2500
-NoConn ~ 2450 2600
-NoConn ~ 2450 2700
 NoConn ~ 1250 2500
-Text GLabel 2450 4400 2    50   Input ~ 0
-D+
 Text GLabel 2450 4500 2    50   Input ~ 0
+D+
+Text GLabel 2450 4400 2    50   Input ~ 0
 D-
 Text Notes 6900 6250 0    50   ~ 0
 SDO – Serial Data Out. An output signal on a device where data is sent out to another SPI device. Replace MOSI\nSDI – Serial Data In. An input signal on a device where data is received from another SPI device. Replace MISO\nCS – Chip Select. Activated by the controller to initiate communication with a given peripheral. Replace SS\n\nDetails here: https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names
@@ -1035,17 +1029,13 @@ Text GLabel 9850 850  1    50   Input ~ 0
 Col3
 Text GLabel 10350 850  1    50   Input ~ 0
 Col4
-Text GLabel 2450 4600 2    50   Input ~ 0
-Row2
-Text GLabel 2450 4800 2    50   Input ~ 0
-Row3
-Text GLabel 2450 4900 2    50   Input ~ 0
+Text GLabel 2450 2600 2    50   Input ~ 0
 Row4
 Text GLabel 2450 3600 2    50   Input ~ 0
 Col2
-Text GLabel 2450 3700 2    50   Input ~ 0
+Text GLabel 2450 3500 2    50   Input ~ 0
 Col3
-Text GLabel 2450 3800 2    50   Input ~ 0
+Text GLabel 2450 3400 2    50   Input ~ 0
 Col4
 Connection ~ 8350 1350
 Connection ~ 8750 1650
@@ -1088,46 +1078,44 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 5F4818C7
-P 6200 1850
-F 0 "R1" V 5993 1850 50  0000 C CNN
-F 1 "75" V 6084 1850 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6130 1850 50  0001 C CNN
-F 3 "~" H 6200 1850 50  0001 C CNN
-	1    6200 1850
+P 6550 1850
+F 0 "R1" V 6343 1850 50  0000 C CNN
+F 1 "75" V 6434 1850 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6480 1850 50  0001 C CNN
+F 3 "~" H 6550 1850 50  0001 C CNN
+	1    6550 1850
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R2
 U 1 1 5F48290F
-P 6450 1950
-F 0 "R2" V 6243 1950 50  0000 C CNN
-F 1 "75" V 6334 1950 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6380 1950 50  0001 C CNN
-F 3 "~" H 6450 1950 50  0001 C CNN
-	1    6450 1950
+P 6800 1950
+F 0 "R2" V 6593 1950 50  0000 C CNN
+F 1 "75" V 6684 1950 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6730 1950 50  0001 C CNN
+F 3 "~" H 6800 1950 50  0001 C CNN
+	1    6800 1950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5650 1850 5950 1850
 Wire Wire Line
-	5650 1950 6250 1950
-Wire Wire Line
-	6350 1850 6900 1850
-Text GLabel 6900 1850 2    50   Input ~ 0
+	6700 1850 7250 1850
+Text GLabel 7250 1850 2    50   Input ~ 0
 D+
-Text GLabel 7100 1950 2    50   Input ~ 0
+Text GLabel 7450 1950 2    50   Input ~ 0
 D-
 Wire Wire Line
-	6600 1950 7100 1950
+	6950 1950 7450 1950
 $Comp
 L Device:D_Zener D25
 U 1 1 5F49960F
-P 6250 2100
-F 0 "D25" V 6204 2180 50  0000 L CNN
-F 1 "3.6V" V 6295 2180 50  0000 L CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6250 2100 50  0001 C CNN
-F 3 "~" H 6250 2100 50  0001 C CNN
-	1    6250 2100
+P 6600 2100
+F 0 "D25" V 6554 2180 50  0000 L CNN
+F 1 "3.6V" V 6645 2180 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 6600 2100 50  0001 C CNN
+F 3 "~" H 6600 2100 50  0001 C CNN
+	1    6600 2100
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1144,19 +1132,15 @@ $EndComp
 Wire Wire Line
 	5950 2150 5950 2250
 Connection ~ 5950 1850
+Connection ~ 6600 1950
 Wire Wire Line
-	5950 1850 6050 1850
-Connection ~ 6250 1950
-Wire Wire Line
-	6250 1950 6300 1950
+	6600 1950 6650 1950
 Wire Wire Line
 	5250 2250 5350 2250
 Wire Wire Line
 	5350 2250 5700 2250
 Connection ~ 5350 2250
 Connection ~ 5950 2250
-Wire Wire Line
-	5950 2250 6250 2250
 Wire Wire Line
 	5700 2250 5700 2400
 Connection ~ 5700 2250
@@ -1202,7 +1186,44 @@ Wire Wire Line
 	5650 1650 5800 1650
 Wire Wire Line
 	5800 1250 5800 1650
-Connection ~ 5800 1650
 Wire Wire Line
 	5800 1650 6050 1650
+$Comp
+L Device:R R3
+U 1 1 5F481387
+P 6300 1500
+F 0 "R3" H 6370 1546 50  0000 L CNN
+F 1 "1.5k" H 6370 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6230 1500 50  0001 C CNN
+F 3 "~" H 6300 1500 50  0001 C CNN
+	1    6300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 1950 6300 1950
+Wire Wire Line
+	5950 1850 6400 1850
+Wire Wire Line
+	5950 2250 6600 2250
+Wire Wire Line
+	6300 1650 6300 1950
+Connection ~ 6300 1950
+Wire Wire Line
+	6300 1950 6600 1950
+Wire Wire Line
+	6300 1350 6050 1350
+Connection ~ 6050 1350
+Connection ~ 5800 1650
+Text Label 5750 1850 0    50   ~ 0
+DP
+Text Label 5750 1950 0    50   ~ 0
+DN
+NoConn ~ 2450 4900
+NoConn ~ 9150 5350
+Text GLabel 4400 5000 2    50   Input ~ 0
+Row1
+NoConn ~ 2450 4200
+NoConn ~ 2450 4300
+NoConn ~ 2450 4600
+NoConn ~ 2450 4800
 $EndSCHEMATC
