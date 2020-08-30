@@ -295,17 +295,6 @@ F 3 "" H 4250 7300 50  0001 C CNN
 $EndComp
 Text GLabel 4400 5300 2    50   Input ~ 0
 Reset
-$Comp
-L JSA:Oshwa_ISP_6 J1
-U 1 1 5F1679A9
-P 4000 5200
-F 0 "J1" H 3671 5296 50  0000 R CNN
-F 1 "AVR ISP" H 3671 5205 50  0000 R CNN
-F 2 "JSA:AVRISP" V 3750 5250 50  0001 C CNN
-F 3 "https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names" H 2725 4650 50  0001 C CNN
-	1    4000 5200
-	1    0    0    -1  
-$EndComp
 Text GLabel 4400 5200 2    50   Input ~ 0
 Row0
 Text GLabel 4400 5100 2    50   Input ~ 0
@@ -1226,4 +1215,59 @@ NoConn ~ 2450 4200
 NoConn ~ 2450 4300
 NoConn ~ 2450 4600
 NoConn ~ 2450 4800
+$Comp
+L JSA:Oshwa_ISP_6 J1
+U 1 1 5F1679A9
+P 4000 5200
+F 0 "J1" H 3671 5296 50  0000 R CNN
+F 1 "AVR ISP" H 3671 5205 50  0000 R CNN
+F 2 "JSA:AVRISP" V 3750 5250 50  0001 C CNN
+F 3 "https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names" H 2725 4650 50  0001 C CNN
+	1    4000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5F5595B1
+P 2950 5900
+F 0 "H1" H 3050 5946 50  0000 L CNN
+F 1 "MountingHole" H 3050 5855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2950 5900 50  0001 C CNN
+F 3 "~" H 2950 5900 50  0001 C CNN
+	1    2950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5F55F584
+P 2950 6150
+F 0 "H2" H 3050 6196 50  0000 L CNN
+F 1 "MountingHole" H 3050 6105 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2950 6150 50  0001 C CNN
+F 3 "~" H 2950 6150 50  0001 C CNN
+	1    2950 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5F5615B3
+P 2950 6400
+F 0 "H3" H 3050 6446 50  0000 L CNN
+F 1 "MountingHole" H 3050 6355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2950 6400 50  0001 C CNN
+F 3 "~" H 2950 6400 50  0001 C CNN
+	1    2950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5F563758
+P 2950 6650
+F 0 "H4" H 3050 6696 50  0000 L CNN
+F 1 "MountingHole" H 3050 6605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 2950 6650 50  0001 C CNN
+F 3 "~" H 2950 6650 50  0001 C CNN
+	1    2950 6650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
