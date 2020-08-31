@@ -299,7 +299,7 @@ Text GLabel 4400 5200 2    50   Input ~ 0
 Row0
 Text GLabel 4400 5100 2    50   Input ~ 0
 Row2
-Text GLabel 2450 2700 2    50   Input ~ 0
+Text GLabel 2450 2900 2    50   Input ~ 0
 Row3
 Text GLabel 2450 2800 2    50   Input ~ 0
 Row2
@@ -397,9 +397,9 @@ Col1
 Text GLabel 8350 850  1    50   Input ~ 0
 Col0
 Connection ~ 8850 1350
-Text GLabel 2450 3000 2    50   Input ~ 0
+Text GLabel 2450 2600 2    50   Input ~ 0
 Row0
-Text GLabel 2450 2900 2    50   Input ~ 0
+Text GLabel 2450 2700 2    50   Input ~ 0
 Row1
 Text GLabel 2450 3800 2    50   Input ~ 0
 Col0
@@ -407,9 +407,9 @@ Text GLabel 2450 3700 2    50   Input ~ 0
 Col1
 NoConn ~ 2450 2500
 NoConn ~ 1250 2500
-Text GLabel 2450 4500 2    50   Input ~ 0
-D+
 Text GLabel 2450 4400 2    50   Input ~ 0
+D+
+Text GLabel 2450 4500 2    50   Input ~ 0
 D-
 Text Notes 6900 6250 0    50   ~ 0
 SDO – Serial Data Out. An output signal on a device where data is sent out to another SPI device. Replace MOSI\nSDI – Serial Data In. An input signal on a device where data is received from another SPI device. Replace MISO\nCS – Chip Select. Activated by the controller to initiate communication with a given peripheral. Replace SS\n\nDetails here: https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names
@@ -1018,7 +1018,7 @@ Text GLabel 9850 850  1    50   Input ~ 0
 Col3
 Text GLabel 10350 850  1    50   Input ~ 0
 Col4
-Text GLabel 2450 2600 2    50   Input ~ 0
+Text GLabel 2450 3000 2    50   Input ~ 0
 Row4
 Text GLabel 2450 3600 2    50   Input ~ 0
 Col2
