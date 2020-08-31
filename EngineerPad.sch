@@ -296,12 +296,12 @@ $EndComp
 Text GLabel 4400 5300 2    50   Input ~ 0
 Reset
 Text GLabel 4400 5200 2    50   Input ~ 0
-Row0
+Col0
 Text GLabel 4400 5100 2    50   Input ~ 0
-Row2
-Text GLabel 2450 2900 2    50   Input ~ 0
+Col2
+Text GLabel 2450 3700 2    50   Input ~ 0
 Row3
-Text GLabel 2450 2800 2    50   Input ~ 0
+Text GLabel 2450 3600 2    50   Input ~ 0
 Row2
 $Comp
 L power:+5V #PWR09
@@ -397,13 +397,13 @@ Col1
 Text GLabel 8350 850  1    50   Input ~ 0
 Col0
 Connection ~ 8850 1350
-Text GLabel 2450 2600 2    50   Input ~ 0
+Text GLabel 2450 3400 2    50   Input ~ 0
 Row0
-Text GLabel 2450 2700 2    50   Input ~ 0
+Text GLabel 2450 3500 2    50   Input ~ 0
 Row1
-Text GLabel 2450 3800 2    50   Input ~ 0
+Text GLabel 2450 3000 2    50   Input ~ 0
 Col0
-Text GLabel 2450 3700 2    50   Input ~ 0
+Text GLabel 2450 2900 2    50   Input ~ 0
 Col1
 NoConn ~ 2450 2500
 NoConn ~ 1250 2500
@@ -1018,13 +1018,13 @@ Text GLabel 9850 850  1    50   Input ~ 0
 Col3
 Text GLabel 10350 850  1    50   Input ~ 0
 Col4
-Text GLabel 2450 3000 2    50   Input ~ 0
+Text GLabel 2450 3800 2    50   Input ~ 0
 Row4
-Text GLabel 2450 3600 2    50   Input ~ 0
+Text GLabel 2450 2800 2    50   Input ~ 0
 Col2
-Text GLabel 2450 3500 2    50   Input ~ 0
+Text GLabel 2450 2700 2    50   Input ~ 0
 Col3
-Text GLabel 2450 3400 2    50   Input ~ 0
+Text GLabel 2450 2600 2    50   Input ~ 0
 Col4
 Connection ~ 8350 1350
 Connection ~ 8750 1650
@@ -1210,7 +1210,7 @@ DN
 NoConn ~ 2450 4900
 NoConn ~ 9150 5350
 Text GLabel 4400 5000 2    50   Input ~ 0
-Row1
+Col1
 NoConn ~ 2450 4200
 NoConn ~ 2450 4300
 NoConn ~ 2450 4600
