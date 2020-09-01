@@ -230,24 +230,24 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR04
 U 1 1 5F169608
-P 3900 4700
-F 0 "#PWR04" H 3900 4550 50  0001 C CNN
-F 1 "+5V" H 3915 4873 50  0000 C CNN
-F 2 "" H 3900 4700 50  0001 C CNN
-F 3 "" H 3900 4700 50  0001 C CNN
-	1    3900 4700
-	1    0    0    -1  
+P 3400 1700
+F 0 "#PWR04" H 3400 1550 50  0001 C CNN
+F 1 "+5V" H 3415 1873 50  0000 C CNN
+F 2 "" H 3400 1700 50  0001 C CNN
+F 3 "" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR07
 U 1 1 5F169EF0
-P 3900 5600
-F 0 "#PWR07" H 3900 5350 50  0001 C CNN
-F 1 "GND" H 3905 5427 50  0000 C CNN
-F 2 "" H 3900 5600 50  0001 C CNN
-F 3 "" H 3900 5600 50  0001 C CNN
-	1    3900 5600
-	1    0    0    -1  
+P 2500 1700
+F 0 "#PWR07" H 2500 1450 50  0001 C CNN
+F 1 "GND" H 2505 1527 50  0000 C CNN
+F 2 "" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR014
@@ -293,12 +293,8 @@ F 3 "" H 4250 7300 50  0001 C CNN
 	1    4250 7300
 	1    0    0    -1  
 $EndComp
-Text GLabel 4400 5300 2    50   Input ~ 0
+Text GLabel 2800 2200 3    50   Input ~ 0
 Reset
-Text GLabel 4400 5200 2    50   Input ~ 0
-Col0
-Text GLabel 4400 5100 2    50   Input ~ 0
-Col2
 Text GLabel 2450 3700 2    50   Input ~ 0
 Row3
 Text GLabel 2450 3600 2    50   Input ~ 0
@@ -401,9 +397,9 @@ Text GLabel 2450 3400 2    50   Input ~ 0
 Row0
 Text GLabel 2450 3500 2    50   Input ~ 0
 Row1
-Text GLabel 2450 3000 2    50   Input ~ 0
+Text GLabel 3850 3000 2    50   Input ~ 0
 Col0
-Text GLabel 2450 2900 2    50   Input ~ 0
+Text GLabel 3850 2900 2    50   Input ~ 0
 Col1
 NoConn ~ 2450 2500
 NoConn ~ 1250 2500
@@ -1020,11 +1016,11 @@ Text GLabel 10350 850  1    50   Input ~ 0
 Col4
 Text GLabel 2450 3800 2    50   Input ~ 0
 Row4
-Text GLabel 2450 2800 2    50   Input ~ 0
+Text GLabel 3850 2800 2    50   Input ~ 0
 Col2
-Text GLabel 2450 2700 2    50   Input ~ 0
+Text GLabel 3850 2700 2    50   Input ~ 0
 Col3
-Text GLabel 2450 2600 2    50   Input ~ 0
+Text GLabel 3850 2600 2    50   Input ~ 0
 Col4
 Connection ~ 8350 1350
 Connection ~ 8750 1650
@@ -1209,8 +1205,6 @@ Text Label 5750 1950 0    50   ~ 0
 DN
 NoConn ~ 2450 4900
 NoConn ~ 9150 5350
-Text GLabel 4400 5000 2    50   Input ~ 0
-Col1
 NoConn ~ 2450 4200
 NoConn ~ 2450 4300
 NoConn ~ 2450 4600
@@ -1218,13 +1212,13 @@ NoConn ~ 2450 4800
 $Comp
 L JSA:Oshwa_ISP_6 J1
 U 1 1 5F1679A9
-P 4000 5200
-F 0 "J1" H 3671 5296 50  0000 R CNN
-F 1 "AVR ISP" H 3671 5205 50  0000 R CNN
-F 2 "JSA:AVRISP" V 3750 5250 50  0001 C CNN
-F 3 "https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names" H 2725 4650 50  0001 C CNN
-	1    4000 5200
-	1    0    0    -1  
+P 2900 1800
+F 0 "J1" H 2571 1896 50  0000 R CNN
+F 1 "AVR ISP 6" V 2571 1805 50  0000 C CNN
+F 2 "JSA:AVRISP" V 2650 1850 50  0001 C CNN
+F 3 "https://www.oshwa.org/a-resolution-to-redefine-spi-signal-names" H 1625 1250 50  0001 C CNN
+	1    2900 1800
+	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
@@ -1269,5 +1263,41 @@ F 2 "MountingHole:MountingHole_2.2mm_M2" H 2950 6650 50  0001 C CNN
 F 3 "~" H 2950 6650 50  0001 C CNN
 	1    2950 6650
 	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2200 2900 3000
+Wire Wire Line
+	2900 3000 2450 3000
+Wire Wire Line
+	3000 2200 3000 2800
+Wire Wire Line
+	3000 2800 2450 2800
+Wire Wire Line
+	3100 2200 3100 2900
+Wire Wire Line
+	3100 2900 2450 2900
+Wire Wire Line
+	2900 3000 3850 3000
+Connection ~ 2900 3000
+Wire Wire Line
+	3100 2900 3850 2900
+Connection ~ 3100 2900
+Wire Wire Line
+	3000 2800 3850 2800
+Connection ~ 3000 2800
+Wire Wire Line
+	2450 2700 3850 2700
+Wire Wire Line
+	2450 2600 3850 2600
+$Comp
+L Connector:AVR-ISP-6 J?
+U 1 1 5F4E2942
+P 4050 1800
+F 0 "J?" V 3583 1850 50  0000 C CNN
+F 1 "AVR-ISP-6" V 3674 1850 50  0000 C CNN
+F 2 "" V 3800 1850 50  0001 C CNN
+F 3 " ~" H 2775 1250 50  0001 C CNN
+	1    4050 1800
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
