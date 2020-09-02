@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U1
-U 1 1 5F118C07
-P 1850 3700
-F 0 "U1" H 1206 3746 50  0000 R CNN
-F 1 "ATmega328P-PU" H 1206 3655 50  0000 R CNN
-F 2 "Package_DIP:DIP-28_W7.62mm_Socket" H 1850 3700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1850 3700 50  0001 C CNN
-	1    1850 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR01
 U 1 1 5F11E6D7
 P 1950 2100
@@ -39,7 +28,6 @@ Wire Wire Line
 	1850 2200 1950 2200
 Wire Wire Line
 	1950 2100 1950 2200
-Connection ~ 1950 2200
 $Comp
 L power:GND #PWR05
 U 1 1 5F121C2F
@@ -402,7 +390,6 @@ Col0
 Text GLabel 3850 2900 2    50   Input ~ 0
 Col1
 NoConn ~ 2450 2500
-NoConn ~ 1250 2500
 Text GLabel 2450 4400 2    50   Input ~ 0
 D+
 Text GLabel 2450 4500 2    50   Input ~ 0
@@ -1289,4 +1276,29 @@ Wire Wire Line
 	2450 2700 3850 2700
 Wire Wire Line
 	2450 2600 3850 2600
+Connection ~ 1950 2200
+$Comp
+L MCU_Microchip_ATmega:ATmega328P-PU U1
+U 1 1 5F118C07
+P 1850 3700
+F 0 "U1" H 1206 3746 50  0000 R CNN
+F 1 "ATmega328P-PU" H 1206 3655 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm_Socket" H 1850 3700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1850 3700 50  0001 C CNN
+	1    1850 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F56287C
+P 1100 2500
+F 0 "#PWR0103" H 1100 2250 50  0001 C CNN
+F 1 "GND" H 1105 2327 50  0000 C CNN
+F 2 "" H 1100 2500 50  0001 C CNN
+F 3 "" H 1100 2500 50  0001 C CNN
+	1    1100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 2500 1250 2500
 $EndSCHEMATC
