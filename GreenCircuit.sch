@@ -422,7 +422,7 @@ U 1 1 5F5595B1
 P 9350 5800
 F 0 "H1" H 9450 5846 50  0000 L CNN
 F 1 "MountingHole" H 9450 5755 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9350 5800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9350 5800 50  0001 C CNN
 F 3 "~" H 9350 5800 50  0001 C CNN
 	1    9350 5800
 	1    0    0    -1  
@@ -433,7 +433,7 @@ U 1 1 5F55F584
 P 9650 5800
 F 0 "H2" H 9750 5846 50  0000 L CNN
 F 1 "MountingHole" H 9750 5755 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9650 5800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9650 5800 50  0001 C CNN
 F 3 "~" H 9650 5800 50  0001 C CNN
 	1    9650 5800
 	1    0    0    -1  
@@ -444,7 +444,7 @@ U 1 1 5F5615B3
 P 9350 6000
 F 0 "H3" H 9450 6046 50  0000 L CNN
 F 1 "MountingHole" H 9450 5955 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9350 6000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9350 6000 50  0001 C CNN
 F 3 "~" H 9350 6000 50  0001 C CNN
 	1    9350 6000
 	1    0    0    -1  
@@ -455,7 +455,7 @@ U 1 1 5F563758
 P 9650 6000
 F 0 "H4" H 9750 6046 50  0000 L CNN
 F 1 "MountingHole" H 9750 5955 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2" H 9650 6000 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 9650 6000 50  0001 C CNN
 F 3 "~" H 9650 6000 50  0001 C CNN
 	1    9650 6000
 	1    0    0    -1  
@@ -489,17 +489,6 @@ F 1 "ATmega328P-PU" H 4056 4105 50  0000 R CNN
 F 2 "Package_DIP:DIP-28_W7.62mm_Socket" H 4700 4150 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 4700 4150 50  0001 C CNN
 	1    4700 4150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO1
-U 1 1 5F56A161
-P 10500 5900
-F 0 "#LOGO1" H 10500 6400 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 10500 5500 50  0001 C CNN
-F 2 "" H 10500 5900 50  0001 C CNN
-F 3 "~" H 10500 5900 50  0001 C CNN
-	1    10500 5900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1194,7 +1183,6 @@ Wire Wire Line
 	1850 2700 1850 2900
 Wire Wire Line
 	1550 2800 2150 2800
-NoConn ~ 5300 4950
 Wire Wire Line
 	8850 1350 8850 1650
 Wire Wire Line
@@ -1259,4 +1247,27 @@ F 3 "~" H 8750 2400 50  0001 C CNN
 	1    8750 2400
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO1
+U 1 1 5F9B5001
+P 10500 5800
+F 0 "#LOGO1" H 10500 6075 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10500 5575 50  0001 C CNN
+F 2 "Symbol:KiCad-Logo_8mm_Copper" H 10500 5800 50  0001 C CNN
+F 3 "~" H 10500 5800 50  0001 C CNN
+	1    10500 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small #LOGO2
+U 1 1 5F9B59EC
+P 10150 6150
+F 0 "#LOGO2" H 10150 6425 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10150 5925 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_Copper" H 10150 6150 50  0001 C CNN
+F 3 "~" H 10150 6150 50  0001 C CNN
+	1    10150 6150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5300 4950
 $EndSCHEMATC
